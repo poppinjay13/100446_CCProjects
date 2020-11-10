@@ -4,10 +4,11 @@
 
 using namespace std;
 
+//basic code for analysis by lexical analysis
 int main()
 {
     int i = 0;
-    vector<string> msg{"Hello", "Strathmore", "World", "from", "Ian", "Odundo", "at", "100446"};
+    vector<string> msg{"Hello", "World", "from", "Ian", "Odundo", "at", "Strathmore", "-", "100446"};
 
     for (const string &word : msg)
     {

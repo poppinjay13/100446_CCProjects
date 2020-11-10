@@ -64,7 +64,7 @@ int main()
             buffer[j++] = ch;
         }
         //if the next token is an empty space or a new line we determine it is a lexeme
-        else if ((ch == ' ' || ch == '\n') && (j != 0))
+        else if ((ch == ' ' || ch == '\n' || ch == '{' || ch == '<' || ch == '>') && (j != 0))
         {
             //clear the final token from the buffer
             buffer[j] = '\0';
@@ -83,3 +83,4 @@ int main()
 
     return 0;
 }
+//noted shortcomings include handling operators in string and comments
