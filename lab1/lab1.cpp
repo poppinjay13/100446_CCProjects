@@ -55,7 +55,7 @@ int main()
         {
             //check if the token is an operator, loop through all 6 operators
             if (ch == operators[i])
-                cout << ch << " is operator\n";
+                cout << ch << " is an operator\n";
         }
 
         //check to see if the token is alphanumeric
@@ -72,9 +72,9 @@ int main()
 
             //check if the lexeme is a keyword
             if (isKeyword(buffer))
-                cout << buffer << " is keyword\n";
+                cout << buffer << " is a keyword\n";
             else
-                cout << buffer << " is indentifier\n";
+                cout << buffer << " is an indentifier\n";
         }
     }
 
